@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.donor-information {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 55%; /* Centers the form */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    align-items: center; /* Centers labels and inputs */
+}
+
+
+
+
+
+.donation-amount {
+    display: flex;
+    flex-direction: row; /* Ensures the items are aligned in a row */
+    align-items: center; /* Aligns the radio buttons and labels vertically */
+    gap: 5px; /* Reduces the space between radio buttons and their labels */
+}
+
+.donation-amount input[type="radio"] {
+    margin-right: 5px; /* Adjusts the space between radio button and its label */
+    width: auto; /* Ensures radio buttons don’t stretch */
+}
+
+.donation-amount label {
+    margin-right: 10px; /* Adds a bit of space between the radio button and the next one */
+}
+
+.donation-amount label,
+.donation-amount input[type="radio"] {
+    font-size: 14px; /* Reduce font size to fit better */
+}
+
+
+
+.donor-information input,
+.donor-information select,
+.donor-information textarea {
+    width: 40%; /* Set width of inputs */
+    padding: 5px;
+}
+
+
+#checkbox-donation {
+    display: flex;
+    align-items: center; /* Aligns items horizontally */
+    gap: 5px; /* Reduces the space between the elements */
+}
+
+#checkbox-donation label {
+    margin: 0; /* Removes margin from labels */
+    padding: 0; /* Removes padding from labels */
+}
+
+#checkbox-donation input[type="checkbox"] {
+    margin: 0; /* Removes margin from the checkbox */
+    padding: 0; /* Removes padding from the checkbox */
+}
+.star {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.red_heading {
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
