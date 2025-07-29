@@ -1,0 +1,21 @@
+.body{
+    margin: 0px 150px;  
+}
+
+.nav-bar {
+    justify-content: space-between; 
+    margin: 50px 150px;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.nav-item {
+    list-style: none;
+    text-align: center;
+}
