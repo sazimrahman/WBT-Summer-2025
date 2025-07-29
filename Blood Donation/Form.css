@@ -15,67 +15,59 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 55%; /* Centers the form */
+    width: 30%; /* Centers the form */
+    margin-left: 10%; /* Shifts the form to the right */
 }
 
 .form-group {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Stack label and input vertically */
     gap: 5px;
     width: 100%;
-    align-items: center; /* Centers labels and inputs */
+    font-weight: bold;
+    text-wrap: nowrap; /* Prevents text from wrapping */
+    align-items: flex-start; /* Aligns the labels and inputs to the left */
+    
 }
-
-
-
-
 
 .donation-amount {
     display: flex;
-    flex-direction: row; /* Ensures the items are aligned in a row */
-    align-items: center; /* Aligns the radio buttons and labels vertically */
-    gap: 5px; /* Reduces the space between radio buttons and their labels */
+    flex-direction: row; /* Aligns radio buttons vertically */
+    align-items: flex-start; /* Align radio buttons and labels to the left */
+    gap: 10px; /* Adds space between the radio buttons */
+   
 }
 
 .donation-amount input[type="radio"] {
-    margin-right: 5px; /* Adjusts the space between radio button and its label */
+    margin-right: 5px; /* Adjusts space between radio button and label */
     width: auto; /* Ensures radio buttons don’t stretch */
 }
 
-.donation-amount label {
-    margin-right: 10px; /* Adds a bit of space between the radio button and the next one */
-}
+/* .donation-amount label {
+    margin-right: 10px; 
+     font-size: 18px;
+    font-weight: bold;
+} */
 
+form .donation-amount > label {
+    font-size: 16px;
+}
+.donation-amount1 {
+    font-weight: bold;
+    font-size: 16px; /* Adjusts the font size for better readability */
+}
 .donation-amount label,
 .donation-amount input[type="radio"] {
-    font-size: 14px; /* Reduce font size to fit better */
+    font-size: 14px; /* Reduce font size for better fitting */
 }
-
-
 
 .donor-information input,
 .donor-information select,
 .donor-information textarea {
-    width: 40%; /* Set width of inputs */
+    width: 100%; /* Makes all input fields take up full width */
     padding: 5px;
 }
 
-
-#checkbox-donation {
-    display: flex;
-    align-items: center; /* Aligns items horizontally */
-    gap: 5px; /* Reduces the space between the elements */
-}
-
-#checkbox-donation label {
-    margin: 0; /* Removes margin from labels */
-    padding: 0; /* Removes padding from labels */
-}
-
-#checkbox-donation input[type="checkbox"] {
-    margin: 0; /* Removes margin from the checkbox */
-    padding: 0; /* Removes padding from the checkbox */
-}
 .star {
     color: red;
 }
@@ -89,16 +81,183 @@ main {
     font-size: 2rem;
     font-weight: bold;
 }
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+.normal-text{
+    font-weight: lighter;
+    font-size: small;
+    text-wrap: nowrap; /* Prevents text from wrapping */
 }
+/* Ensure the other-amount div takes up the full width and aligns its contents */
+.other-amount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 100%; /* Full width for the container */
+    text-wrap: nowrap;
+}
+
+/* Make the input field inside other-amount wider */
+form .other-amount > input {
+    width: 80%; /* Adjust the width of the input field to make it bigger */
+    padding: 4px 60px; /* Add padding to make it more spacious */
+}
+
+.checkbox-donation{
+    width: auto; 
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.checkbox-donation1 {
+    font-weight: bold;
+}
+.normal-text2{
+    font-weight: lighter;
+    font-size: small;
+    text-wrap: nowrap; 
+    margin-top: 5px;
+}
+.credit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-wrap: nowrap; 
+    margin-left: 18.5rem;
+    margin-top: -2rem;
+}
+.credit p {
+    margin-right: 10px; 
+    margin-left:10px
+}
+
+.credit input {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50px; /* Adjusts the width of the input field */
+}
+.form-actions  {
+     display: flex;
+    margin-left:10rem;
+    /* Adds padding for better appearance */
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; /* Adds space between buttons */
+    margin-top: 20px; /* Adds space above the buttons */
+     /* Optional, for rounded corners */
+}
+
+button{
+border-radius: 4px;
+ padding: 5px 8px;
+}
+
+
+.honorarium-memorial {
+    display: flex;
+    flex-direction: column; /* Stack all elements vertically */
+    gap: 15px; /* Adds space between elements */
+    width: 30%; /* Aligns the form with the donor-information section */
+    margin-left: 10%; /* Centers the form */
+}
+.radio-group{
+    display: flex;
+    margin-left: 6rem;
+    flex-direction: column; /* Aligns radio buttons vertically */
+    margin-top: 2rem; /* Centers radio buttons vertically */
+    gap: 10px; /* Adds space between radio buttons */
+}
+
+.honorarium-memorial .form-group {
+    display: flex;
+    flex-direction: row; /* Align label and input horizontally */
+    gap: 10px; /* Adds space between label and input */
+    width: 100%; /* Ensures full width for both labels and inputs */
+    align-items: center; /* Centers input and label vertically */
+}
+
+.honorarium-memorial label {
+    font-weight: bold; /* Makes the labels bold */
+    width: 15%; /* Makes the label width consistent */
+}
+
+.honorarium-memorial input,
+.honorarium-memorial select {
+    width: 65%; /* Ensures the input fields are the same width */
+    padding: 5px; /* Adds padding for better readability */
+    margin-right: 10rem;
+}
+
 
 button:hover {
     background-color: #45a049;
+}
+
+.additional-info{
+    margin-left: 12rem;
+    font-weight: bold;
+
+}
+.additional-info input{
+    width: 20%; /* Makes all input fields take up full width */
+    padding: 5px;
+}
+.additional-checkbox{
+    display: flex;
+    flex-direction: column; /* Aligns checkbox and label vertically */
+    gap: 10px; /* Adds space between checkbox and label */
+    margin-top: 1rem;
+}
+
+.additional-info {
+    font-weight: bold;
+    margin-bottom: 1rem; /* Added space below the section */
+    display: flex;
+    flex-direction: row; /* Stacks children vertically */
+    margin-top: 1rem;
+}
+
+.additional-info label {
+    display: block; /* Makes sure the label takes up the whole line */
+    margin-bottom: 0.5rem; /* Adds some space below the label */
+    margin-right: 10px; /* Adds space on the left */
+}
+
+.additional-info textarea {
+    width: 30%; /* Ensures the textarea fills the container */
+    padding: 10px; /* Adds padding inside the textarea */
+    border-radius: 4px; /* Optional, for rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    font-size: 1rem; /* Makes the text readable */
+    margin-left: 10px; /* Adds space on the left */
+}
+
+.comments-text{
+    font-weight: lighter;
+    font-size: small;
+}
+
+.contact-methods .radio-group1 {
+    display: flex;
+    flex-direction: column; /* Aligns checkboxes vertically */
+    margin-left: 16rem;
+    margin-top: -2rem;
+    gap: 10px; /* Adds space between checkboxes */
+
+}
+
+.contact-text{
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds space below the text */
+  font-size: larger;
+}
+
+.contact-text-color {
+    margin-left: -16rem;
+    color: #888; /* Light gray */
+}
+
+.last-text1{
+    margin-top: -0.5rem;
+}
+.last-text{
+    color: #888; /* Light gray */
 }
