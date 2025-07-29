@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.donor-information {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%; 
+    margin-left: 10%; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row; 
+    gap: 5px;
+    width: 100%;
+    font-weight: bold;
+    text-wrap: nowrap; 
+    align-items: flex-start; 
+    
+}
+
+.donation-amount {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    gap: 10px; 
+   
+}
+
+.donation-amount input[type="radio"] {
+    margin-right: 5px; 
+    width: auto;
+}
+
+
+
+form .donation-amount > label {
+    font-size: 16px;
+}
+.donation-amount1 {
+    font-weight: bold;
+    font-size: 16px; 
+}
+
+.donation-amount label,
+.donation-amount input[type="radio"] {
+    font-size: 14px; 
+}
+
+.donor-information input,
+.donor-information select,
+.donor-information textarea {
+    width: 100%; 
+    padding: 5px;
+}
+
+.star {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.red_heading {
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.normal-text{
+    font-weight: lighter;
+    font-size: small;
+    text-wrap: nowrap; 
+}
+
+
+.other-amount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 100%; 
+    text-wrap: nowrap;
+}
+
+
+form .other-amount > input {
+    width: 80%; 
+    padding: 4px 60px; 
+}
+
+.checkbox-donation{
+    width: auto; 
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.checkbox-donation1 {
+    font-weight: bold;
+}
+.normal-text2{
+    font-weight: lighter;
+    font-size: small;
+    text-wrap: nowrap; 
+    margin-top: 5px;
+}
+.credit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-wrap: nowrap; 
+    margin-left: 18.5rem;
+    margin-top: -2rem;
+}
+.credit p {
+    margin-right: 10px; 
+    margin-left:10px
+}
+
+.credit input {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50px; 
+}
+.form-actions  {
+     display: flex;
+    margin-left:10rem;
+   
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 20px; 
+     
+}
+
+button{
+border-radius: 4px;
+ padding: 5px 8px;
+}
+
+
+.honorarium-memorial {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    width: 30%; 
+    margin-left: 10%; 
+}
+.radio-group{
+    display: flex;
+    margin-left: 6rem;
+    flex-direction: column; 
+    margin-top: 2rem; 
+}
+
+.honorarium-memorial .form-group {
+    display: flex;
+    flex-direction: row; 
+    gap: 10px; 
+    width: 100%; 
+    align-items: center; 
+}
+
+.honorarium-memorial label {
+    font-weight: bold; 
+    width: 15%; 
+}
+
+.honorarium-memorial input,
+.honorarium-memorial select {
+    width: 65%; 
+    padding: 5px; 
+    margin-right: 10rem;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+.additional-info{
+    margin-left: 12rem;
+    font-weight: bold;
+
+}
+.additional-info input{
+    width: 20%; 
+    padding: 5px;
+}
+.additional-checkbox{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    margin-top: 1rem;
+}
+
+.additional-info {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row; 
+    margin-top: 1rem;
+}
+
+.additional-info label {
+    display: block; 
+    margin-bottom: 0.5rem; 
+    margin-right: 10px; 
+}
+
+.additional-info textarea {
+    width: 30%; 
+    padding: 10px; 
+    border-radius: 4px; 
+    border: 1px solid #ccc; 
+    font-size: 1rem; 
+    margin-left: 10px; 
+}
+
+.comments-text{
+    font-weight: lighter;
+    font-size: small;
+}
+
+.contact-methods .radio-group1 {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 16rem;
+    margin-top: -2rem;
+    gap: 10px; 
+
+}
+
+.contact-text{
+    font-weight: bold;
+    margin-bottom: 10px; 
+  font-size: larger;
+}
+
+.contact-text-color {
+    margin-left: -16rem;
+    color: #888; 
+}
+
+.last-text1{
+    margin-top: -0.5rem;
+}
+.last-text{
+    color: #888; 
+}
