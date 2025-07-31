@@ -1,21 +1,190 @@
-.body{
-    margin: 0px 150px;  
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Navbar Styles */
 .nav-bar {
-    justify-content: space-between; 
-    margin: 50px 150px;
-    align-items: center;
+    background-color: #333;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 0px;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-item {
-    list-style: none;
+    margin: 0 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.nav-item a:hover {
+    color: #ff6f61;
+}
+
+.nav-item.active a {
+    color: #ff6f61;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin: 40px 0;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.1);
+}
+
+.profile-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.profile-details h4 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+    text-align: center;
+}
+
+.contact-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Projects Cards */
+.projects-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    height: 250px; /* Increased height */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Image in Project Cards */
+.project-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Make it circular */
+    background-color: transparent; /* Remove background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Reduced space below the image */
+}
+
+/* Image Placeholder */
+.project-image-placeholder {
+    width: 100%; /* Ensure the image fills the circle */
+    height: 100%;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Make sure the image fits well inside the circle */
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer p {
+    font-size: 0.9rem;
 }
