@@ -114,6 +114,22 @@ body {
     font-size: 1rem;
 }
 
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.contact-form select:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
 /* Footer */
 .footer {
     background-color: #333;
