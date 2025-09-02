@@ -1,0 +1,106 @@
+ /* ===== Page ===== */
+  :root{
+    --bg:#f6cfcf;         /* light pink page background */
+    --ink:#111;           /* primary text color */
+    --muted:#6b6b6b;      /* subtle helper text */
+    --field:#fff;         /* input background */
+    --border:#3b3b3b;     /* dark border, minimalistic */
+  }
+  html,body{height:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font:16px/1.4 "Times New Roman", Times, serif; /* classic serif look */
+  }
+
+  /* ===== Layout ===== */
+ .wrap{
+  max-width:980px;
+  margin:100px auto 120px; /* more top & bottom spacing */
+  padding:0 24px;
+}
+  h1{
+    text-align:center;
+    font-size:52px;
+    font-weight:700;
+    letter-spacing:.4px;
+    margin:0 0 36px;
+  }
+
+  form{
+    /* grid for tidy label/field alignment */
+    display:grid;
+    grid-template-columns: 210px 1fr;
+    column-gap:18px;
+    row-gap:18px;
+    align-items:center;
+  }
+
+  /* ===== Labels & fields ===== */
+  label{font-size:20px}
+  .field{
+    max-width:620px;     /* keeps long inputs from stretching too wide */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  select,
+  textarea{
+    width:100%;
+    background:var(--field);
+    border:1px solid var(--border);
+    border-radius:3px;
+    padding:8px 10px;
+    font:16px "Times New Roman", Times, serif;
+    box-sizing:border-box;
+  }
+
+  textarea{min-height:120px; resize:vertical}
+
+  /* small inline groups (first/last name, date, phone) */
+  .inline{display:flex; align-items:center; gap:10px}
+  .sep{margin:0 2px} /* tiny dash between inline fields */
+
+  .w-day{width:84px}
+  .w-month{width:110px}
+  .w-year{width:120px}
+
+  .w-cc{width:88px}       /* country code select */
+  .w-phone{flex:1}
+
+  /* Radios & checkboxes line up with labels nicely */
+  .choices{display:flex; align-items:center; gap:18px; flex-wrap:wrap}
+  .choices input{margin-right:6px}
+
+  /* Helper note */
+  .note{font-style:italic; color:var(--muted); margin-left:8px}
+
+  /* File input keeps native look; align within grid cell */
+  .file{display:flex; align-items:center; gap:10px}
+
+  /* Submit button */
+ .actions{
+  grid-column: 1 / -1;
+  display:flex; 
+  justify-content:center; 
+  margin-top:10px;
+  margin-bottom:60px; /* ⬅️ Add more space below the button */
+}
+  button{
+    background:#eee;
+    border:1px solid var(--border);
+    border-radius:4px;
+    padding:8px 18px;
+    font:16px "Times New Roman", Times, serif;
+    cursor:pointer;
+  }
+  button:active{transform:translateY(1px)}
+  /* Make long single-line fields look like the screenshot */
+  .long{max-width:620px}
+
+
+
+  

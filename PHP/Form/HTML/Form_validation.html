@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../CSS/From_validation.css">
+  <title>Student Registration Form</title>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Student Registration Form</h1>
+
+   
+    <form action="../PHP/validation.php" method="post" enctype="multipart/form-data">
+    
+      <label for="roll">Roll no. :</label>
+      <div class="field">
+        <input id="roll" name="roll" type="text" class="long" />
+      </div>
+
+      
+      <label>Student name :</label>
+      <div class="field inline">
+        <input type="text" name="first_name" placeholder="First Name" aria-label="First name" style="width:220px" />
+        <span class="sep">-</span>
+        <input type="text" name="last_name" placeholder="Last Name" aria-label="Last name" style="width:220px" />
+      </div>
+
+     
+      <label for="father">Father's name :</label>
+      <div class="field">
+        <input id="father" name="father" type="text" class="long" />
+      </div>
+
+      
+      <label>Date of birth :</label>
+      <div class="field inline">
+        <select name="dob_day" class="w-day" aria-label="Day">
+          <option selected>Day</option>
+          <option>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
+          <option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
+          <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
+          <option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+          <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
+          <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+          <option>31</option>
+        </select>
+        <span class="sep">-</span>
+        <select name="dob_month" class="w-month" aria-label="Month">
+          <option selected>Month</option>
+          <option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option>
+          <option>May</option><option>Jun</option><option>Jul</option><option>Aug</option>
+          <option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option>
+        </select>
+        <span class="sep">-</span>
+        <select name="dob_year" class="w-year" aria-label="Year">
+          <option selected>Year</option>
+          <option>2008</option><option>2007</option><option>2006</option><option>2005</option>
+          <option>2004</option><option>2003</option><option>2002</option><option>2001</option>
+          <option>2000</option><option>1999</option><option>1998</option><option>1997</option>
+        </select>
+        <span class="note">(DD-MM-YYYY)</span>
+      </div>
+
+     
+      <label>Mobile no. :</label>
+      <div class="field inline">
+        <select name="cc" class="w-cc" aria-label="Country code">
+          <option selected>+91</option>
+          <option>+1</option><option>+44</option><option>+61</option>
+        </select>
+        <span class="sep">-</span>
+        <input type="text" name="phone" class="w-phone" inputmode="numeric" aria-label="Phone number" />
+      </div>
+
+    
+      <label for="email">Email id :</label>
+      <div class="field"><input id="email" name="email" type="email" class="long" /></div>
+
+      
+      <label for="pwd">Password :</label>
+      <div class="field"><input id="pwd" name="pwd" type="password" class="long" /></div>
+
+      <label>Gender :</label>
+      <div class="choices">
+        <label><input type="radio" name="gender" value="male" /> Male</label>
+        <label><input type="radio" name="gender" value="female" /> Female</label>
+      </div>
+
+     
+      <label>Department :</label>
+      <div class="choices">
+        <label><input type="checkbox" name="dept[]" value="CSE" /> CSE</label>
+        <label><input type="checkbox" name="dept[]" value="IT" /> IT</label>
+        <label><input type="checkbox" name="dept[]" value="ECE" /> ECE</label>
+        <label><input type="checkbox" name="dept[]" value="Civil" /> Civil</label>
+        <label><input type="checkbox" name="dept[]" value="Mech" /> Mech</label>
+      </div>
+
+
+      <label for="course">Course :</label>
+      <div class="field">
+        <select id="course" name="course">
+          <option selected>------------------------ Select Current Course's ------------------------</option>
+          <option>B.Tech</option><option>M.Tech</option><option>B.Sc</option><option>M.Sc</option><option>Diploma</option>
+        </select>
+      </div>
+
+      
+      <label>Student photo :</label>
+      <div class="file">
+        <input type="file" name="photo" />
+        <span class="note">No file chosen</span>
+      </div>
+
+      
+      <label for="city">City :</label>
+      <div class="field"><input id="city" name="city" type="text" class="long" /></div>
+
+     
+      <label for="address">Address :</label>
+      <div class="field"><textarea id="address" name="address" class="long"></textarea></div>
+
+  
+      <div class="actions">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html> 
