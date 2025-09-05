@@ -1,0 +1,169 @@
+/* form.css — raw CSS to match the provided donation form design */
+
+:root{
+  --bg:#e9e9e9;
+  --panel:#f0f0f0;
+  --panel-border:#c9c9c9;
+  --label:#333;
+  --hint:#666;
+  --heading:#d40000;
+  --input-border:#8aa2bd;
+  --required:#cf0000;
+}
+
+*{box-sizing:border-box;}
+
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  font:14px/1.4 Arial, Helvetica, sans-serif;
+  color:var(--label);
+}
+
+.wrapper{
+  max-width:780px;
+  margin:30px auto;
+  background:white;
+  padding:18px 20px 28px;
+  border:1px solid #bcbcbc;
+  border-radius:6px;
+  box-shadow:0 1px 0 #fff inset, 0 1px 2px rgba(0,0,0,.08);
+}
+
+.breadcrumb{
+  font-size:12px;
+  color:#444;
+  margin-bottom:10px;
+}
+
+.breadcrumb strong{color:#000;}
+.req-note{
+  font-size:12px;
+  color:#444;
+  margin:0 0 10px;
+}
+.req-note .req{color:var(--required); font-weight:bold;}
+
+.section{
+  border:1px solid var(--panel-border);
+  border-radius:6px;
+  background:var(--panel);
+  padding:14px 16px 18px;
+  margin-bottom:16px;
+}
+
+.section-title{
+  margin:0 0 12px;
+  color:var(--heading);
+  font-size:18px;
+  font-weight:bold;
+}
+
+.form-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:6px 0;
+}
+
+.label{
+  width:150px;
+  min-width:150px;
+  text-align:right;
+  padding-right:10px;
+  color:#111;
+  font-weight:bold;
+}
+
+.required-star{ color:var(--required); }
+
+.field{
+  flex:1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea{
+  width:360px;
+  max-width:100%;
+  padding:6px 7px;
+  border:1px solid #8fa8c2;
+  border-radius:4px;
+  outline:0;
+  background:#fff;
+  box-shadow:0 0 0 2px rgba(137,163,192,.15) inset;
+}
+
+textarea{ height:90px; resize:vertical; }
+
+.inline-group{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:12px 18px;
+}
+
+.inline-note{
+  font-size:12px;
+  color:var(--hint);
+  margin-top:2px;
+}
+
+.help-text{
+  font-size:12px;
+  color:var(--hint);
+  margin:4px 0 0 160px;
+}
+
+.checkbox-row, .radio-row{
+  margin-left:160px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.controls{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  justify-content:flex-start;
+  margin-left:160px;
+  margin-top:6px;
+}
+
+button,
+input[type="submit"],
+input[type="reset"]{
+  border:1px solid #9a9a9a;
+  padding:6px 16px;
+  border-radius:16px;
+  background:#e6e6e6;
+  cursor:pointer;
+  font-weight:bold;
+  box-shadow:0 1px 0 #fff inset;
+}
+
+.footer-note{
+  font-size:12px;
+  color:#444;
+  margin-left:2px;
+  margin-top:8px;
+}
+
+/* validation error message */
+.error{
+  color:#cf0000;
+  font-size:12px;
+  margin:4px 0 0;
+}
+.success{
+  color:#0a7a0a;
+  background:#e9f7e9;
+  border:1px solid #a7d7a7;
+  border-radius:6px;
+  padding:10px 12px;
+  margin:12px 0;
+}
